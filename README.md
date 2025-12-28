@@ -1,5 +1,8 @@
 # ML Stock Direction Indicator
 
+![CI](https://github.com/Yousician-01/Stock-Direction-Indicator/actions/workflows/ci.yml/badge.svg)
+![Docker](https://img.shields.io/docker/pulls/atharvaraut01/ml-stock-indicator)
+
 A machine-learning–based **stock direction indicator** that identifies **high-confidence bullish conditions** from historical price data.  
 The system is intentionally conservative and abstains from making predictions when confidence is low.
 
@@ -164,7 +167,7 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 ```
 
-### Create a virtual environment (recommended)
+### Create a virtual environment (Recommended)
 ```bash
 python -m venv venv
 source venv/bin/activate        # Linux / macOS
@@ -180,6 +183,20 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+---
+
+## Run with Docker (Recommended)
+The application is fully containerized and available on Docker Hub.
+```bash
+docker pull atharvaraut01/ml-stock-indicator
+docker run -p 8501:8501 atharvaraut01/ml-stock-indicator
+
+```
+Open: 
+```http://localhost:8501```
+
+---
 
 ## Limitations
 
